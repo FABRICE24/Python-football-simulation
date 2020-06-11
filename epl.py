@@ -1,3 +1,5 @@
+import random
+
 teams = ['arsenal',
          'aston villa',
          'bournemouth',
@@ -25,4 +27,4 @@ for i in range(len(teams)):
     for j in range(len(opponents)):
         # teams cannot have themselves as opponents
         if teams[i] != opponents[j]:
-            print(teams[i] + " vs " + opponents[j])
+            print(teams[i] + " " + str(random.randint(0, 9)) + " vs " + str(random.randint(0, 9)) + " " + opponents[j])
